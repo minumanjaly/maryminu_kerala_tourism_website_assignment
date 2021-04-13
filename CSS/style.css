@@ -1,0 +1,46 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.mymargin{
+    margin: 20px;
+}
+
+/* img{
+    height: 50px;
+    width: 2%;
+    margin-left: 3%;
+    margin-top: 1em;
+}
+  */
+header{
+    background: black;
+    height: 5em;
+}
+img{
+    height: 90%;
+    width: 5%;
+    margin-left: 5%;
+    margin-top: 1em;
+}
+
+.head-tag{
+    float: right;
+    margin-top: 33px;
+    margin-right: 55px;
+}
+.head-tag a{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 8px;
+    margin-right: 8px;
+}
+.head-tag a:hover{
+    background-color:steelblue;
+    color: black;
+
+}
+

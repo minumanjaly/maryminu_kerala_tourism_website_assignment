@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events</title>
+    <style>
+        body{
+            background-color: saddlebrown;
+            text-align: center;
+        }
+        #customtext{
+            color: rgb(12, 59, 105);
+            font-family: cursive;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to DOM Events</h1>
+    <div id="customtext">
+        <p>asdfghjkl.,mmmmllllllllllllllllbhgfgfghkjjhjnnkmlksdoakhszgkmkm.mgslkjldjzsdgknjbxvzhjsfdjke\ahjf\b\nvddjjj</p>
+    </div>
+    <div id="divitem">
+        <img id="imageitem"  src="./images/krisztian-tabori-nZGNVOvEYio-unsplash.jpg" alt="" height="250px" width="200px">
+        <!-- onmouseover="changeimage();" onmouseout="resetimage();"  -->
+    </div>
+    
+    <button onclick="hide();">disappear</button>
+    <button ondblclick="reset();">Reset all</button> 
+    <button onclick="change();">change image</button>
+    <script>
+        var item = document.getElementById("imageitem");
+        var divelem = document.querySelector("divitem");
+
+
+        function hide(){
+            item.setAttribute("hidden","true");
+
+        }
+        function reset(){
+            item.removeAttribute("hidden","true");
+        }
+        function change(){
+            divelem.innerHTML = <p> your item is missing </p>;
+        }
+        // function changeimage(){
+        //     item.removeAttribute("src","./images/krisztian-tabori-nZGNVOvEYio-unsplash.jpg");
+        //     item.setAttribute("src","./images/eberhard-grossgasteiger-XLIKVFCGpBw-unsplash.jpg");
+
+        // }
+        // function resetimage(){
+        //     item.removeAttribute("src","./images/eberhard-grossgasteiger-XLIKVFCGpBw-unsplash.jpg");
+        //     item.removeAttribute("src","./images/krisztian-tabori-nZGNVOvEYio-unsplash.jpg");
+        // }
+            
+        
+
+    </script>
+</body>
+</html>

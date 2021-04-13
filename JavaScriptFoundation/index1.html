@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Excerciset</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        #head{
+            color: brown;
+        }
+        .text1{
+            border: solid darkblue 20px ; 
+
+        }
+        .list1{
+            border: solid red 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1 id="head1">ICTAK FSD Virtual Session</h1>
+    <p class="text1">DOM Manipulation using Java script </p>
+    <div>
+        <ul class="list1">
+            <li>getElementById</li>
+            <li>getElementByClassname</li>
+            <li>getElementByTagName</li>
+            <li>QuerySelector</li>
+        </ul>
+    </div>
+    <a href="https://ictkerala.org/">Official Site</a>
+    <button>Set Action</button>
+    <script>
+        var x = document.getElementsById("head1");
+        x.style.color="orange";
+        var y = document.getElementsByClassName("text1");
+
+    </script>
+
+    
+</body>
+</html>
